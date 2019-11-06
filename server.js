@@ -1,4 +1,4 @@
-/******** 初始化 ************/
+/********* 初始化 ************/
 
 var http = require('http')
 var fs = require('fs')
@@ -19,7 +19,7 @@ var server = http.createServer(function (request, response) {
     var query = parsedUrl.query
     var method = request.method
 
-    /******** 判断路径 ************/
+    /********* 判断路径 ************/
 
     console.log('含查询字符串的路径\n' + pathWithQuery)
 
@@ -67,7 +67,7 @@ var server = http.createServer(function (request, response) {
         response.end()
     }
 
-    /******** Server开启结果 ************/
+    /********* Server开启结果 ************/
 })
 
 server.listen(port)
